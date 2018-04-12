@@ -1,0 +1,11 @@
+<h2><%= @dog.name %></h2>
+<fieldset>
+  <ul>
+    <li>Breed: <%= @dog.breed %></li>
+    <li>Age: <%= @dog.age %></li>
+    <label>Owner:</label>
+    <% @dog.employees.each do |employee| %>
+    <li>: <%= link_to employee.full_name, employee %></li>
+    <% end %>
+  </ul>
+</fieldset>
